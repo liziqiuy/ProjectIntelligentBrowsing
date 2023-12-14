@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parper Plus</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+            width: 500px;
+            overflow: hidden;
+            background-color: #ddd;
+            position: relative;
+            top: 50%;
+            left: 40%;
+            
+
+        }
+
+        #plugin-container {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            background-color: white;
+        }
+         
+        #options {
+            margin-bottom: 20px;
+            padding: 0 20px;
+            margin-top: 15px;
+        }
+
+        .radio-label {
+            display: block;
+            margin-bottom: 10px;
+            color: black;
+            font-weight: bold;
+            font-family: cursive;
+        }
+
+        #question-input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            height: 80px;
+        }
+
+        #answer-container {
+            max-height: 300px;
+            width: calc(100% - 20px);
+            overflow-y: auto;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .radio-input {
+            margin-right: 5px;
+        }
+
+        #submit-btn-container {
+            text-align: center;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+
+        #submit-btn {
+            background-color:rgb(47, 110, 226);
+            color:  #ffffff;
+            padding: 15px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        #submit-btn:hover {
+            background-color: #c1c5cf;
+        }
+
+        #logo {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            margin: 20px auto;
+           
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="plugin-container">
+        <div id="options">
+            <label class="radio-label">
+                <input type="radio" name="method" class="radio-input" value="bert"> BERT
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="method" class="radio-input" value="chatgpt35"> ChatGPT-3.5
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="method" class="radio-input" value="chatgpt40"> ChatGPT-4.0
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="method" class="radio-input" value="doc2vec"> Doc2Vec
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="method" class="radio-input" value="tfidf"> TF-IDF
+            </label>
+        </div>
+
+        <textarea id="question-input" placeholder="Please enter your question"></textarea>
+
+        <div id="answer-container"></div>
+
+        <div id="submit-btn-container">
+            <button id="submit-btn" onclick="window.alert('Submited'),submitQuestion">&#9654;</button>
+        </div>
+    </div>
+
+    <!-- -->
+
+    <script src="popup.js"></script>
+</body>
+</html>
