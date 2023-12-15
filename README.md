@@ -1,3 +1,5 @@
 # CourseProject
+The documentation is stated in the Final Project Proposal PDF file.
 
-Please fork this repository and paste the github link of your fork on Microsoft CMT. Detailed instructions are on Coursera under Week 1: Course Project Overview/Week 9 Activities.
+# How to run the code
+Please download FLASK before running the backend.
