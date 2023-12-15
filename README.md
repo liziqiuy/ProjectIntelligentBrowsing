@@ -1,3 +1,5 @@
 # CourseProject
 
-Please fork this repository and paste the github link of your fork on Microsoft CMT. Detailed instructions are on Coursera under Week 1: Course Project Overview/Week 9 Activities.
+The Documentation is in the Final Project Report.pdf file.
+# How to run the code
+The project consists of two parts, the front end and the back end. Before running the back end, please install FLASK and use FLASK to start the back end. Then you can start running popup.html.
