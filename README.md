@@ -6,4 +6,4 @@ Project_progress1.pdf shows the project progress in the middle of the project.
 The original proposal is Project Proposal - Final.pdf. There are changes to the proposal, and so we updated the proposal to Final Project Proposal.pdf. 
 
 # How to run the code
-The project consists of two parts, the front end and the back end. Before running the back end, please install FLASK and use FLASK to start the back end. Then you can start running popup.html. The front end codes are in chrome_extension whereas the back end codes are zipped in chrome_extension_background(1).zip. Please unzip the file and run codes separately.
+The project consists of two parts, the front end and the back end. Before running the back end, please install FLASK and use FLASK to start the back end. Then you can start running popup.html. The front end codes are in chrome_extension whereas the back end codes are zipped in chrome_extension_background(3).zip. Please unzip the file and run codes separately.
